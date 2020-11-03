@@ -1,0 +1,114 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(Fonts/Bodoni72/Bodoni72.ttc);
+}
+
+h1 {
+  font-family: myFirstFont;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+  background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#dad5d1 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+  #dad5d1;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  font-family: myFirstFont;
+}
+
+#container{
+  position: relative;
+  top: 100px;
+  width: 500px;
+}
+
+#hero-image{
+  display: flex;
+	justify-content: center;
+}
+
+#hero-image img{
+  width: 250px;
+  height: 250px;
+}
+
+#content-box{
+  background: url(white-background.png);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+
+#slider{
+  overflow: hidden;
+}
+
+#slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img{
+  width:  20%;
+  float: left;
+}
+
+@keyframes slider {
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  74%{
+    left: -300;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+
+}
+
+ul{
+	position: relative;
+  margin: 45px;
+	margin-bottom: 45px;
+	list-style-type: none;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+a {
+	text-decoration: none;
+	padding: 15px;
+  color: #FFF
+}
+
+a:hover{
+  background: #e7e6f3;
+}
